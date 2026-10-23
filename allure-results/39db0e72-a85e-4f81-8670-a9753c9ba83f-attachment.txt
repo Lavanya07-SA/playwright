@@ -1,3 +1,0 @@
-Test fail passed-
-    Expected page: AdactinHotel Page
-    Actual page: Testautomationpractice Page

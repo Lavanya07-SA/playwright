@@ -1,3 +1,0 @@
-AdactinHotel-login page
-AdactinHotel-search page
-AdactinHotel-select page

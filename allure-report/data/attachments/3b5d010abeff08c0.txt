@@ -1,6 +1,0 @@
-Favorite Browser: true
-Beforeclick: false
-Afterclick: true
-Finalclick: true
-default radio button is safari
-21-40 years selected

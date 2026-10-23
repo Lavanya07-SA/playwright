@@ -1,3 +1,0 @@
-false
-[ 'Select Fruit', 'Apple', 'Mango', 'Orange', 'Banana', 'Pine Apple' ]
-3

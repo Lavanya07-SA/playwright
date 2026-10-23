@@ -1,6 +1,0 @@
-starting page test
-ordervalue:  9M1228958F
-Test Fail Annotation
-     expected page: BookItenary
-     actual page: hfgdhsj
-page Test Completed

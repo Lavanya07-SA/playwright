@@ -1,6 +1,0 @@
-true
-Text cleared successfully
-My learning is superb so far.
-Email entered successfully
-About myself entered successfully
-Text editor filled

@@ -1,6 +1,0 @@
-basic checkbox: true
-Notification Checkbox: true
-Favorite Languages: true true
-Tristate checkbox runned successfully
-Toggle Switch Toggled: true
-Verify button is disabled: true
