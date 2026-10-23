@@ -1,0 +1,46 @@
+all data- //table/tbody/tr/td
+
+row data- //table/tbody/tr[2]/td
+
+column data- //table/tbody/tr/td[5]
+
+particular data- //table/tbody/tr[5]/td[5]
+
+header- //table/thead/tr/th
+
+
+<html>
+  <head>
+    <table>
+      <thead>
+        <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email Address</th>
+        <th>Present/Absent</th>
+        </
+      </thead>
+      <tbody>
+        <tr>
+          <td>Koushik</td>
+          <td>Chatterjee</td>
+          <td>koushik@letcode.in</td>
+          <td><input type="checkbox"></td>
+
+        </tr>
+        <tr>
+          <td>Yashwanth</td>
+          <td>Raj</td>
+          <td>Yashwanth@letcode.in</td>
+          <td><input type="checkbox" checked></td>
+        </tr>
+        <tr>
+          <td>Iron</td>
+          <td>Man</td>
+          <td>man@letcode.in</td>
+          <td><input type="checkbox"></td>
+        </tr>
+       </tbody>
+    </table>
+  </head>
+</html>

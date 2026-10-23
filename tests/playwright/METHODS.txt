@@ -1,0 +1,81 @@
+METHODS:
+
+01	accept()        	clicks 'ok' or 'accept'
+
+02	click()	                clicks the selected element
+
+03	dblclick()      	double clicks the selected element
+
+04	fill()	                instantly clears and type the text
+
+05	title()	                gets main tab title
+
+06	url()    	        gets website link
+
+07	goto()          	navigates to website
+
+08	goBack()	        goes back from current page
+
+09	goForward()     	goes forward from current page
+
+10	reload()        	refresh the current page
+
+11	test()	                test block to execute 
+
+12	newContext()    	opens new,clean browser (like incognito window)
+
+13	newPage()       	opens new,clean tab inside current browser
+
+14	close()	                closes page,browser tab,or entire browser
+
+15	type()	                types character
+
+16	locator()       	creates reference to specific web element using selectors/xPath
+
+17	frameLocator()  	targets look inside <iframe> window
+
+18	selectOption()  	chooses one or multiple values
+
+19	on()            	listens for specific background browser events like page errors,console logs or dialogs
+
+20	setInputfiles()  	handles file upload
+
+21	waitForTimeOut()	forces test execution script to pause/wait for ms
+
+22	allTextContents()	gets visible text from all matching elements
+
+23	innerText()     	retrieves only human visible text inside specific element
+
+24	press()         	hitting physical button like enter in keyboard
+
+25	isdisabled()    	checks whether disabled
+
+26	isenabled()	        checks whether enabled
+
+27	ischecked()	        checks whether checkbox or radio button element is selected
+
+28	clear()	                wipes/deletes all existing text inside input box of text field
+
+29	inputvalue()    	retrieves text value sitting inside input field
+
+30	screenshot()	        captures image of current page or specific element
+
+31	hover()	                moves mouse pointer directly over element without clicking it
+
+32	keyboard.press()	global keyboard press like ctrl+A
+
+33	keyboard.type()  	types character
+
+34	waitforselector()	pause/waits until selector element appears
+
+35	boundingbox()	        retrives position
+
+36	evaluate()      	runs custom code or function
+
+37	allinnertexts() 	retrieves all human visible texts and returns in array list
+
+38	getbytext()     	finds element by matching visible,human readable text content on page
+
+39	once()	                registers bckgrnd event listener that fires exactly ine time and then automatuically removes itself
+
+40	frame()         	specific frame/<iframe> element on page matching a given name

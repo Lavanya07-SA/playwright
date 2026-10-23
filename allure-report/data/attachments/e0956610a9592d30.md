@@ -1,0 +1,161 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: filedownload.spec.js >> file download
+- Location: tests\filedownload.spec.js:2:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - navigation "main navigation" [ref=e4]:
+      - generic [ref=e5]:
+        - link "LetCode Home" [ref=e6]:
+          - /url: /
+          - img "LetCode" [ref=e7]
+        - generic [ref=e8]:
+          - link "Work-Space" [ref=e9]:
+            - /url: /test
+          - generic [ref=e10]:
+            - button "Products" [ref=e11] [cursor=pointer]
+            - generic:
+              - link "Ortoni Report":
+                - /url: /product/ortoni-report
+              - link "LetXPath":
+                - /url: /product/letxpath
+              - link "Playwright Runner":
+                - /url: /product/playwright-runner
+          - generic [ref=e15]:
+            - button "Grooming" [ref=e16] [cursor=pointer]
+            - generic:
+              - link "Test Practice":
+                - /url: /test-practice
+              - link "Interview Q & A":
+                - /url: /interview
+              - link "Playwright Quiz":
+                - /url: /pw-quiz
+              - link "Resume Builder":
+                - /url: /resume-builder
+          - link "Courses" [ref=e20]:
+            - /url: /courses
+          - link "Contact" [ref=e21]:
+            - /url: /contact
+        - button "Switch to dark mode" [ref=e23] [cursor=pointer]
+    - main [ref=e26]:
+      - generic [ref=e28]:
+        - generic [ref=e30]:
+          - navigation "Breadcrumb" [ref=e31]:
+            - link "Workspace" [ref=e32]:
+              - /url: /test
+            - generic [ref=e41]:
+              - text: Upload and Download
+              - link "Share Files Online" [ref=e42] [cursor=pointer]
+          - heading "Upload and Download" [level=1] [ref=e48]
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - heading "Upload" [level=2] [ref=e53]
+              - generic [ref=e54]: No file is uploaded, it's a dummy site for learning.
+              - generic [ref=e57] [cursor=pointer]:
+                - generic [ref=e58]: 
+                - generic [ref=e60]: Choose a file…
+            - generic [ref=e61]:
+              - heading "Download" [level=2] [ref=e62]
+              - generic [ref=e63]:
+                - link "Download Excel" [ref=e64]:
+                  - /url: /assets/files/sample.xlsx
+                - link "Download Pdf" [ref=e65]:
+                  - /url: /assets/files/sample.pdf
+                - link "Download Text" [ref=e66]:
+                  - /url: /assets/files/sample.txt
+          - generic [ref=e68]:
+            - heading "Learning Points" [level=3] [ref=e73]
+            - list [ref=e74]:
+              - listitem [ref=e75]:
+                - generic [ref=e79]: How to download & upload files
+              - listitem [ref=e80]:
+                - generic [ref=e84]: ChromeOption class
+              - listitem [ref=e85]:
+                - generic [ref=e89]: SetFileDetector
+            - generic [ref=e90]:
+              - link "Watch Tutorial" [ref=e91]:
+                - /url: /video/file
+              - generic [ref=e95]:
+                - text: "Practice ID:"
+                - code [ref=e96]: file
+          - insertion [ref=e100]:
+            - generic [ref=e103]:
+              - heading "These are topics related to the article that might interest you" [level=2] [ref=e105]: Discover more
+              - link "Compare SSDs" [ref=e106] [cursor=pointer]
+              - link "Share Files Online" [ref=e111] [cursor=pointer]
+              - link "Browse Reference" [ref=e116] [cursor=pointer]
+              - link "Upgrade Tech" [ref=e121] [cursor=pointer]
+              - link "Enroll in Classes" [ref=e126] [cursor=pointer]
+              - link "Find Study Aids" [ref=e131] [cursor=pointer]
+              - link "Get Class Supplies" [ref=e136] [cursor=pointer]
+              - link "Try Office Apps" [ref=e141] [cursor=pointer]
+        - generic [ref=e148]:
+          - insertion:
+            - iframe [ref=e150]
+    - contentinfo [ref=e151]:
+      - generic [ref=e152]:
+        - paragraph [ref=e153]:
+          - text: © 2026 LetCode ·
+          - link "Koushik Chatterjee" [ref=e154]:
+            - /url: https://www.linkedin.com/in/ortoni/
+          - text: "&"
+          - link "Bollineni Yaswanth" [ref=e155]:
+            - /url: https://www.linkedin.com/in/bollineni-lakshmi-yaswanth-14472a199
+        - generic [ref=e156]:
+          - link "GitHub" [ref=e157]:
+            - /url: https://github.com/ortoniKC
+          - link "YouTube" [ref=e161]:
+            - /url: https://www.youtube.com/@letcode
+          - link "LinkedIn" [ref=e165]:
+            - /url: https://www.linkedin.com/in/ortoni/
+          - link "Contact" [ref=e171]:
+            - /url: /contact
+          - link "🍕 Support" [ref=e172]:
+            - /url: https://buymeacoffee.com/letcode
+  - insertion [ref=e174]:
+    - iframe [ref=e176]:
+      - generic [ref=f8e1]:
+        - generic [ref=f8e6]:
+          - generic [ref=f8e7]:
+            - generic "Gemini Notebook" [ref=f8e9]:
+              - link "Free for students" [ref=f8e10] [cursor=pointer]:
+                - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CLMusTWPPapP2B7GE1e8P3dHi0QP8k7WbigGpte23rxaOge3IgyoQASDTkZYiYOWS6IPYDqABx5XBvz7IAQGoAwHIA8sEqgT_AU_QuAllAx_6Je80K3P5DUZ692qGlJUCLCRrKXaKxmphZLZzmBNiWZfMOSqQvk1Ii23YHuurkBCvgc67sG_romqAeG3mlSk0bJbczzAsuzUvv9wWsTu20i1cvW4TVFn36nNVezgoIpKHHnmQZ2NuJ2HbyeFpIWmhKq8K8R5DxTwjqUSVrQ18Z39ovjhRTaf7mCx0NbsizwObZIdocgjxNrKdWVaEkAr7LfYapHmU1gRd3-2Yrsx1tHFxN62Mbre6R0yekNchyEjxpCVdfVSRSoh8C2AzgZSdMumwGxLOPyibKalDJChNhbbwbZldSX3Lynu9jFVjHi5n4gRnHMCA38AEt4Po3egFiAXo787FWYAHx82RnxmoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WJ6F3eevuZcDYAGxCXm51WZOnLf6gAoBmAsByAsBogxnKhIKEI7fsQKV4rEC8N-xApnusQJiFwoVY29tLmdvb2dsZS5Ob3RlYm9va0xNajAKLmNvbS5nb29nbGUuYW5kcm9pZC5hcHBzLmxhYnMubGFuZ3VhZ2UudGFpbHdpbmR4AYgBAZABAaoNAklOyA0B6g0TCNrU3uevuZcDFTFC9Qcd3ag4OogOCbAOoMWrjxnYEwzQFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRICm18YASIBANAYAegYAbIZATfCGQIIAQ&gclid=EAIaIQobChMI09De56-5lwMVMUL1Bx3dqDg6EAEYASAAEgLh-PD_BwE&num=1&cid=CAQSoAIAQM4h3DOckj4Sifz0E60z43_6E3y1CrSMAB5eqionLHC2e15OV-GdZw3-B0lWJyv2hWBza5M_3fDmt_tM0ZD0dXX-eYe6LLbufVDkf6RzNx4NZc2JI2oZ5YBNQRAwkpLBarQIgAo-OIqoCGctXy036_FBjoXPs-M6uFyLBByaoD2DW_pbBmOkVsoLh2T0OI8ZcHsIqumz60Xzcs_wFk10aoodWAI6_j-QJaHwip8oAVBOyWLdaC_4_jM5V1hhCAeBbJ9gdBwPc4tTNiwYfGvNpG3qw5JhKX7TM59B1ksfHvj98jVc9gdi2SkQxPXx1tuA_o2mJvHZt9UsoLnepZ-15BZtrNQM1gugjxBTl3p_NqQGIM_SofO2gQFrhA2Pyv0YAQ&sig=AOD64_0IozZ_qeqz46M85gt7MLZ1raiF_A&rf=1&nb=0&adurl=https://notebook.google/%3Fgad_source%3D5%26gad_campaignid%3D24036751336
+            - generic [ref=f8e11]:
+              - link "Start with lecture notes, finish ready for tests." [ref=f8e13] [cursor=pointer]:
+                - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CLMusTWPPapP2B7GE1e8P3dHi0QP8k7WbigGpte23rxaOge3IgyoQASDTkZYiYOWS6IPYDqABx5XBvz7IAQGoAwHIA8sEqgT_AU_QuAllAx_6Je80K3P5DUZ692qGlJUCLCRrKXaKxmphZLZzmBNiWZfMOSqQvk1Ii23YHuurkBCvgc67sG_romqAeG3mlSk0bJbczzAsuzUvv9wWsTu20i1cvW4TVFn36nNVezgoIpKHHnmQZ2NuJ2HbyeFpIWmhKq8K8R5DxTwjqUSVrQ18Z39ovjhRTaf7mCx0NbsizwObZIdocgjxNrKdWVaEkAr7LfYapHmU1gRd3-2Yrsx1tHFxN62Mbre6R0yekNchyEjxpCVdfVSRSoh8C2AzgZSdMumwGxLOPyibKalDJChNhbbwbZldSX3Lynu9jFVjHi5n4gRnHMCA38AEt4Po3egFiAXo787FWYAHx82RnxmoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WJ6F3eevuZcDYAGxCXm51WZOnLf6gAoBmAsByAsBogxnKhIKEI7fsQKV4rEC8N-xApnusQJiFwoVY29tLmdvb2dsZS5Ob3RlYm9va0xNajAKLmNvbS5nb29nbGUuYW5kcm9pZC5hcHBzLmxhYnMubGFuZ3VhZ2UudGFpbHdpbmR4AYgBAZABAaoNAklOyA0B6g0TCNrU3uevuZcDFTFC9Qcd3ag4OogOCbAOoMWrjxnYEwzQFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRICm18YASIBANAYAegYAbIZATfCGQIIAQ&gclid=EAIaIQobChMI09De56-5lwMVMUL1Bx3dqDg6EAEYASAAEgLh-PD_BwE&num=1&cid=CAQSoAIAQM4h3DOckj4Sifz0E60z43_6E3y1CrSMAB5eqionLHC2e15OV-GdZw3-B0lWJyv2hWBza5M_3fDmt_tM0ZD0dXX-eYe6LLbufVDkf6RzNx4NZc2JI2oZ5YBNQRAwkpLBarQIgAo-OIqoCGctXy036_FBjoXPs-M6uFyLBByaoD2DW_pbBmOkVsoLh2T0OI8ZcHsIqumz60Xzcs_wFk10aoodWAI6_j-QJaHwip8oAVBOyWLdaC_4_jM5V1hhCAeBbJ9gdBwPc4tTNiwYfGvNpG3qw5JhKX7TM59B1ksfHvj98jVc9gdi2SkQxPXx1tuA_o2mJvHZt9UsoLnepZ-15BZtrNQM1gugjxBTl3p_NqQGIM_SofO2gQFrhA2Pyv0YAQ&sig=AOD64_0IozZ_qeqz46M85gt7MLZ1raiF_A&rf=1&nb=7&adurl=https://notebook.google/%3Fgad_source%3D5%26gad_campaignid%3D24036751336
+              - link [ref=f8e14] [cursor=pointer]:
+                - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CLMusTWPPapP2B7GE1e8P3dHi0QP8k7WbigGpte23rxaOge3IgyoQASDTkZYiYOWS6IPYDqABx5XBvz7IAQGoAwHIA8sEqgT_AU_QuAllAx_6Je80K3P5DUZ692qGlJUCLCRrKXaKxmphZLZzmBNiWZfMOSqQvk1Ii23YHuurkBCvgc67sG_romqAeG3mlSk0bJbczzAsuzUvv9wWsTu20i1cvW4TVFn36nNVezgoIpKHHnmQZ2NuJ2HbyeFpIWmhKq8K8R5DxTwjqUSVrQ18Z39ovjhRTaf7mCx0NbsizwObZIdocgjxNrKdWVaEkAr7LfYapHmU1gRd3-2Yrsx1tHFxN62Mbre6R0yekNchyEjxpCVdfVSRSoh8C2AzgZSdMumwGxLOPyibKalDJChNhbbwbZldSX3Lynu9jFVjHi5n4gRnHMCA38AEt4Po3egFiAXo787FWYAHx82RnxmoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WJ6F3eevuZcDYAGxCXm51WZOnLf6gAoBmAsByAsBogxnKhIKEI7fsQKV4rEC8N-xApnusQJiFwoVY29tLmdvb2dsZS5Ob3RlYm9va0xNajAKLmNvbS5nb29nbGUuYW5kcm9pZC5hcHBzLmxhYnMubGFuZ3VhZ2UudGFpbHdpbmR4AYgBAZABAaoNAklOyA0B6g0TCNrU3uevuZcDFTFC9Qcd3ag4OogOCbAOoMWrjxnYEwzQFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRICm18YASIBANAYAegYAbIZATfCGQIIAQ&gclid=EAIaIQobChMI09De56-5lwMVMUL1Bx3dqDg6EAEYASAAEgLh-PD_BwE&num=1&cid=CAQSoAIAQM4h3DOckj4Sifz0E60z43_6E3y1CrSMAB5eqionLHC2e15OV-GdZw3-B0lWJyv2hWBza5M_3fDmt_tM0ZD0dXX-eYe6LLbufVDkf6RzNx4NZc2JI2oZ5YBNQRAwkpLBarQIgAo-OIqoCGctXy036_FBjoXPs-M6uFyLBByaoD2DW_pbBmOkVsoLh2T0OI8ZcHsIqumz60Xzcs_wFk10aoodWAI6_j-QJaHwip8oAVBOyWLdaC_4_jM5V1hhCAeBbJ9gdBwPc4tTNiwYfGvNpG3qw5JhKX7TM59B1ksfHvj98jVc9gdi2SkQxPXx1tuA_o2mJvHZt9UsoLnepZ-15BZtrNQM1gugjxBTl3p_NqQGIM_SofO2gQFrhA2Pyv0YAQ&sig=AOD64_0IozZ_qeqz46M85gt7MLZ1raiF_A&rf=1&nb=8&adurl=https://notebook.google/%3Fgad_source%3D5%26gad_campaignid%3D24036751336
+          - generic "Gemini Notebook" [ref=f8e17]:
+            - link "Gemini Notebook" [ref=f8e18] [cursor=pointer]:
+              - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CLMusTWPPapP2B7GE1e8P3dHi0QP8k7WbigGpte23rxaOge3IgyoQASDTkZYiYOWS6IPYDqABx5XBvz7IAQGoAwHIA8sEqgT_AU_QuAllAx_6Je80K3P5DUZ692qGlJUCLCRrKXaKxmphZLZzmBNiWZfMOSqQvk1Ii23YHuurkBCvgc67sG_romqAeG3mlSk0bJbczzAsuzUvv9wWsTu20i1cvW4TVFn36nNVezgoIpKHHnmQZ2NuJ2HbyeFpIWmhKq8K8R5DxTwjqUSVrQ18Z39ovjhRTaf7mCx0NbsizwObZIdocgjxNrKdWVaEkAr7LfYapHmU1gRd3-2Yrsx1tHFxN62Mbre6R0yekNchyEjxpCVdfVSRSoh8C2AzgZSdMumwGxLOPyibKalDJChNhbbwbZldSX3Lynu9jFVjHi5n4gRnHMCA38AEt4Po3egFiAXo787FWYAHx82RnxmoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WJ6F3eevuZcDYAGxCXm51WZOnLf6gAoBmAsByAsBogxnKhIKEI7fsQKV4rEC8N-xApnusQJiFwoVY29tLmdvb2dsZS5Ob3RlYm9va0xNajAKLmNvbS5nb29nbGUuYW5kcm9pZC5hcHBzLmxhYnMubGFuZ3VhZ2UudGFpbHdpbmR4AYgBAZABAaoNAklOyA0B6g0TCNrU3uevuZcDFTFC9Qcd3ag4OogOCbAOoMWrjxnYEwzQFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRICm18YASIBANAYAegYAbIZATfCGQIIAQ&gclid=EAIaIQobChMI09De56-5lwMVMUL1Bx3dqDg6EAEYASAAEgLh-PD_BwE&num=1&cid=CAQSoAIAQM4h3DOckj4Sifz0E60z43_6E3y1CrSMAB5eqionLHC2e15OV-GdZw3-B0lWJyv2hWBza5M_3fDmt_tM0ZD0dXX-eYe6LLbufVDkf6RzNx4NZc2JI2oZ5YBNQRAwkpLBarQIgAo-OIqoCGctXy036_FBjoXPs-M6uFyLBByaoD2DW_pbBmOkVsoLh2T0OI8ZcHsIqumz60Xzcs_wFk10aoodWAI6_j-QJaHwip8oAVBOyWLdaC_4_jM5V1hhCAeBbJ9gdBwPc4tTNiwYfGvNpG3qw5JhKX7TM59B1ksfHvj98jVc9gdi2SkQxPXx1tuA_o2mJvHZt9UsoLnepZ-15BZtrNQM1gugjxBTl3p_NqQGIM_SofO2gQFrhA2Pyv0YAQ&sig=AOD64_0IozZ_qeqz46M85gt7MLZ1raiF_A&rf=1&nb=1&adurl=https://notebook.google/%3Fgad_source%3D5%26gad_campaignid%3D24036751336
+        - generic [ref=f8e19] [cursor=pointer]
+        - button [ref=f8e24] [cursor=pointer]
+        - iframe
+  - dialog "Unlock more content" [active] [ref=e179]:
+    - generic [ref=e180]:
+      - img "Welcome to letcode.in" [ref=e183]
+      - generic [ref=e184]:
+        - heading "Unlock more content" [level=1] [ref=e185]
+        - paragraph [ref=e187]: Take action to continue accessing the content on this site
+      - button "View a short ad Site-wide access for 24 hours" [ref=e189] [cursor=pointer]:
+        - generic [ref=e190]:
+          - generic [ref=e191]: View a short ad
+          - generic [ref=e192]: Site-wide access for 24 hours
+```

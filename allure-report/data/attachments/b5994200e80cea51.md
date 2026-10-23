@@ -1,0 +1,217 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: AdactinHotel.spec.js >> Adactin Hotel
+- Location: tests\AdactinHotel.spec.js:2:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f7e1]:
+  - table [ref=f7e2]:
+    - rowgroup [ref=f7e3]:
+      - row [ref=f7e4]:
+        - cell [ref=f7e5]:
+          - img "AdactIn Group" [ref=f7e6]
+        - cell [ref=f7e7]:
+          - 'img "Adactin Group: Hotel Reservation System" [ref=f7e8]'
+      - row [ref=f7e9]:
+        - cell [ref=f7e10]
+  - table [ref=f7e11]:
+    - rowgroup [ref=f7e12]:
+      - row [ref=f7e13]:
+        - cell "Welcome to Adactin Group of Hotels" [ref=f7e14]
+        - cell [ref=f7e15]:
+          - textbox [ref=f7e16]: Hello admin791!
+          - link "Search Hotel" [ref=f7e17] [cursor=pointer]:
+            - /url: SearchHotel.php
+          - text: "|"
+          - link "Booked Itinerary" [ref=f7e18] [cursor=pointer]:
+            - /url: BookedItinerary.php
+          - text: "|"
+          - link "Change Password" [ref=f7e19] [cursor=pointer]:
+            - /url: ChangePassword.php
+          - text: "|"
+          - link "Logout" [ref=f7e20] [cursor=pointer]:
+            - /url: Logout.php
+        - cell [ref=f7e21]:
+          - table [ref=f7e22]:
+            - rowgroup [ref=f7e23]:
+              - row [ref=f7e24]:
+                - cell [ref=f7e25]:
+                  - heading "Adactin Hotel Mobile App" [level=4] [ref=f7e26]
+                  - link "DOWNLOAD" [ref=f7e27] [cursor=pointer]:
+                    - /url: https://adactinhotelapp.com/resources/AdactinHotelApp_SetupGuide.pdf
+                  - text: the Hotel Mobile App and extend your experience. Click to know more about how to get the app on Android or IOS.
+              - row [ref=f7e28]:
+                - cell [ref=f7e29]:
+                  - heading "HotelApp Web Services" [level=4] [ref=f7e30]
+                  - text: Access Hotel App SOAP and Rest Services to learn web services testing.
+                  - link "Click" [ref=f7e31] [cursor=pointer]:
+                    - /url: https://adactinhotelapp.com/HotelAdactinWebServices/
+                  - text: to know more.
+              - row [ref=f7e32]:
+                - cell [ref=f7e33]:
+                  - heading "Sample TestCases" [level=4] [ref=f7e34]
+                  - link "DOWNLOAD" [ref=f7e35] [cursor=pointer]:
+                    - /url: http://adactinhotelapp.com/resources/Sample-TestCases_HotelApplication.pdf
+                  - text: a complete set of readymade sample TEST CASES for this application. Enjoy automation!
+              - row [ref=f7e36]:
+                - cell [ref=f7e37]:
+                  - heading "Known Defects" [level=4] [ref=f7e38]
+                  - link "DOWNLOAD" [ref=f7e39] [cursor=pointer]:
+                    - /url: http://adactinhotelapp.com/resources/KnownDefects_HotelApp.pdf
+                  - text: list of known defects for this application.
+              - row [ref=f7e40]:
+                - cell [ref=f7e41]:
+                  - heading "Book on Automation" [level=4] [ref=f7e42]
+                  - iframe [ref=f7e43]
+              - row [ref=f7e44]:
+                - cell [ref=f7e45]:
+                  - heading "About Adactin" [level=4] [ref=f7e46]
+                  - text: Get solutions for all your testing needs. Visit
+                  - link "www.adactin.com" [ref=f7e47] [cursor=pointer]:
+                    - /url: http://www.adactin.com
+                  - text: today!
+      - row [ref=f7e48]:
+        - cell [ref=f7e49]:
+          - table [ref=f7e51]:
+            - rowgroup [ref=f7e52]:
+              - row [ref=f7e53]:
+                - cell [ref=f7e54]:
+                  - link "Back" [ref=f7e55] [cursor=pointer]:
+                    - /url: SelectHotel.php
+              - row [ref=f7e56]:
+                - cell "Book A Hotel" [ref=f7e57]
+              - row [ref=f7e58]:
+                - cell "Hotel Name" [ref=f7e59]
+                - cell [ref=f7e60]:
+                  - textbox [disabled] [ref=f7e61]: Hotel Cornice
+              - row [ref=f7e62]:
+                - cell "Location" [ref=f7e63]
+                - cell [ref=f7e64]:
+                  - textbox [disabled] [ref=f7e65]: Adelaide
+              - row [ref=f7e66]:
+                - cell "Room Type" [ref=f7e67]
+                - cell [ref=f7e68]:
+                  - textbox [disabled] [ref=f7e69]: Deluxe
+              - row [ref=f7e70]:
+                - cell "Number of Rooms" [ref=f7e71]
+                - cell [ref=f7e72]:
+                  - textbox [disabled] [ref=f7e73]: 2 Room(s)
+              - row [ref=f7e74]:
+                - cell "Total Days" [ref=f7e75]
+                - cell [ref=f7e76]:
+                  - textbox [disabled] [ref=f7e77]: 2 Day(s)
+              - row [ref=f7e78]:
+                - cell "Price per Night" [ref=f7e79]
+                - cell [ref=f7e80]:
+                  - textbox [disabled] [ref=f7e81]: AUD $ 300
+              - row [ref=f7e82]:
+                - cell "Total Price" [ref=f7e83]
+                - cell [ref=f7e84]:
+                  - textbox [disabled] [ref=f7e85]: AUD $ 610
+              - row [ref=f7e86]:
+                - cell "GST" [ref=f7e87]
+                - cell [ref=f7e88]:
+                  - textbox [disabled] [ref=f7e89]: AUD $ 61
+              - row [ref=f7e90]:
+                - cell "Final Billed Price" [ref=f7e91]
+                - cell [ref=f7e92]:
+                  - textbox [disabled] [ref=f7e93]: AUD $ 671
+              - row [ref=f7e94]:
+                - cell "First Name*" [ref=f7e95]
+                - cell [ref=f7e96]:
+                  - textbox [ref=f7e97]
+              - row [ref=f7e98]:
+                - cell "Last Name*" [ref=f7e99]
+                - cell [ref=f7e100]:
+                  - textbox [ref=f7e101]
+              - row [ref=f7e102]:
+                - cell "Billing Address*" [ref=f7e103]
+                - cell [ref=f7e104]:
+                  - textbox [ref=f7e105]
+              - row [ref=f7e106]:
+                - cell "Credit Card No.*" [ref=f7e107]
+                - cell "Use 16 digit Dummy Data" [ref=f7e108]:
+                  - textbox [ref=f7e109]
+                  - text: Use 16 digit Dummy Data
+              - row [ref=f7e110]:
+                - cell "Credit Card Type*" [ref=f7e111]
+                - cell "- Select Credit Card Type -" [ref=f7e112]:
+                  - combobox [ref=f7e113]:
+                    - option "- Select Credit Card Type -" [selected]
+                    - option "American Express"
+                    - option "VISA"
+                    - option "Master Card"
+                    - option "Other"
+              - row [ref=f7e114]:
+                - cell "Expiry Date*" [ref=f7e115]
+                - cell "- Select Month - - Select Year -" [ref=f7e116]:
+                  - combobox [ref=f7e117]:
+                    - option "- Select Month -" [selected]
+                    - option "January"
+                    - option "February"
+                    - option "March"
+                    - option "April"
+                    - option "May"
+                    - option "June"
+                    - option "July"
+                    - option "August"
+                    - option "September"
+                    - option "October"
+                    - option "November"
+                    - option "December"
+                  - combobox [ref=f7e118]:
+                    - option "- Select Year -" [selected]
+                    - option "2011"
+                    - option "2012"
+                    - option "2013"
+                    - option "2014"
+                    - option "2015"
+                    - option "2016"
+                    - option "2017"
+                    - option "2018"
+                    - option "2019"
+                    - option "2020"
+                    - option "2021"
+                    - option "2022"
+                    - option "2023"
+                    - option "2024"
+                    - option "2025"
+                    - option "2026"
+                    - option "2027"
+                    - option "2028"
+                    - option "2029"
+                    - option "2030"
+              - row [ref=f7e119]:
+                - cell "CVV Number*" [ref=f7e120]
+                - cell [ref=f7e121]:
+                  - textbox [ref=f7e122]
+              - row [ref=f7e123]:
+                - cell [ref=f7e124]
+                - cell [ref=f7e125]:
+                  - button "Book Now" [ref=f7e126]
+                  - button "Cancel" [ref=f7e127]
+  - table [ref=f7e128]:
+    - rowgroup [ref=f7e129]:
+      - row [ref=f7e130]:
+        - cell [ref=f7e131]
+      - row [ref=f7e132]:
+        - cell [ref=f7e133]:
+          - text: © 2026 -
+          - link "Adactin.com" [ref=f7e134] [cursor=pointer]:
+            - /url: http://www.adactin.com
+          - text: . All Rights Reserved. Adactin Group Pty. Ltd.
+```

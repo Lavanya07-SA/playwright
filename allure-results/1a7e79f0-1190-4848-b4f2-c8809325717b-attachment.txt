@@ -1,0 +1,3 @@
+browser launched using beforeall
+starting test
+Test Completed

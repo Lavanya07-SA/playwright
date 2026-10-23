@@ -1,0 +1,71 @@
+DOM structure: document object model
+
+<html>
+  <head>
+    <tr>
+      <th>name="lavanya"</th>
+    </tr>
+  </head>
+</html>
+
+pink color= tag name
+orange color= attribute name
+blue color= attribute value
+black color= text
+
+locators:
+
+we use the By class with the findElement() and findElements() method to locate web elements
+
+supports in By-abstract class
+
+priority based
+  |
+01.Id-
+02.Name
+03.Class
+04.LinkedText- to find black color text using full word
+
+05.PartialLinkedText- to find black color text using half of the word
+06.Xpath
+    |_relative Xpath- starts with // 
+    |_absolute Xpath- starts with /
+
+
+relative Xpath types:
+
+    .Basic Attribute Xpath
+syntax:
+     //tagname[@attributename="attributevalue"]
+//-relative Xpath
+tagname-pinkcolor
+@-select attribute
+attributename-orange color
+attributevalue-bluecolor
+
+    .Contains Xpath-contains():method
+syntax:
+    //tagname[contains(@attributename,'attributevalue')]
+
+    .start-with Xpath-starts-with():method
+syntax:
+    //tagname[starts-with(@attributename,'attributevalue')]
+
+    .index Xpath
+syntax:
+    (//tagname[@attributename="attributevalue])[index] 
+
+    .linkedtext-text():method
+syntax:
+     //tagname[text()='full text']
+
+    .partial linked text
+syntax:
+    //tagname[contains(text(),'half of the text')]
+
+07.CSS selector
+   |_id selector- #idvalue
+   |_attribute selector- [attributename="attributevalue"]
+   |_class selector- .classvalue
+
+08.TagName

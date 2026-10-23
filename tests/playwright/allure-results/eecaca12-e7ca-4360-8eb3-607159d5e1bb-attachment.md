@@ -1,0 +1,184 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: frame.spec.js >> frame
+- Location: tests\frame.spec.js:2:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - navigation "main navigation" [ref=e4]:
+      - generic [ref=e5]:
+        - link "LetCode Home" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img "LetCode" [ref=e7]
+        - generic [ref=e8]:
+          - link "Work-Space" [ref=e9] [cursor=pointer]:
+            - /url: /test
+          - generic [ref=e10]:
+            - button "Products" [ref=e11] [cursor=pointer]
+            - generic:
+              - link "Ortoni Report":
+                - /url: /product/ortoni-report
+              - link "LetXPath":
+                - /url: /product/letxpath
+              - link "Playwright Runner":
+                - /url: /product/playwright-runner
+          - generic [ref=e15]:
+            - button "Grooming" [ref=e16] [cursor=pointer]
+            - generic:
+              - link "Test Practice":
+                - /url: /test-practice
+              - link "Interview Q & A":
+                - /url: /interview
+              - link "Playwright Quiz":
+                - /url: /pw-quiz
+              - link "Resume Builder":
+                - /url: /resume-builder
+          - link "Courses" [ref=e20] [cursor=pointer]:
+            - /url: /courses
+          - link "Contact" [ref=e21] [cursor=pointer]:
+            - /url: /contact
+        - button "Switch to dark mode" [ref=e23] [cursor=pointer]
+    - main [ref=e26]:
+      - generic [ref=e28]:
+        - generic [ref=e30]:
+          - navigation "Breadcrumb" [ref=e31]:
+            - link "Workspace" [ref=e32] [cursor=pointer]:
+              - /url: /test
+            - generic [ref=e41]: Frame
+          - heading "Frame" [level=1] [ref=e44]
+        - generic [ref=e46]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Let's go for a frame practice 😉
+            - iframe [active] [ref=e51]:
+              - generic [ref=f1e1]:
+                - generic [ref=f1e4]:
+                  - heading "Enter Details" [level=1] [ref=f1e5]
+                  - generic [ref=f1e6]:
+                    - generic [ref=f1e7]:
+                      - generic [ref=f1e8]: First Name
+                      - textbox "Enter name" [ref=f1e9]: Rohit
+                    - generic [ref=f1e10]:
+                      - generic [ref=f1e11]: Last Name
+                      - textbox "Enter email" [ref=f1e12]: Kumar
+                  - paragraph [ref=f1e14]: You have entered Rohit Kumar
+                  - iframe [active] [ref=f1e16]:
+                    - generic [ref=f7e1]:
+                      - generic [ref=f7e5]:
+                        - generic [ref=f7e6]: Email
+                        - textbox "Enter email" [active] [ref=f7e7]: rohit.kumar@example.com
+                      - insertion [ref=f7e9]:
+                        - generic [ref=f7e12]:
+                          - heading "These are topics related to the article that might interest you" [level=2] [ref=f7e14]: Discover more
+                          - link "Find Baby Names" [ref=f7e15] [cursor=pointer]
+                          - link "Browse Reference" [ref=f7e20] [cursor=pointer]
+                - insertion [ref=f1e18]:
+                  - iframe [ref=f1e20]:
+                    - generic [ref=f9e1]:
+                      - generic [ref=f9e7]:
+                        - generic [ref=f9e8]:
+                          - generic [ref=f9e9]: CrowdStrike®
+                          - generic [ref=f9e10]: CrowdStrike®
+                        - generic "CrowdStrike®" [ref=f9e13]:
+                          - link "CrowdStrike®" [ref=f9e14] [cursor=pointer]:
+                            - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CEFWRtGLPatmXJs2S4dkPvevNkQSOlrSQigHWz-fS7xTUy4_TgUYQASDTkZYiYOWS6IPYDqABhLur_ALIAQGoAwHIA8sEqgTqAU_QqSAB0_6m0aLohA_z8eazPd7s4CwKLfYYeC8y_QI9fRbCOnXCxYyLx0rONjBeEv6-cZswfRKVklHy2S6IBi-uW5DM7kvlOlxcGDyK_S-mYysPej7WKHHUwNw2RKmNGlMiUmrWFw7jvteZ3DpgJvxyYr7IKjOqNFbFcDc9AHHtNb7D4ScVsJr9YW77KwNJoU_jSZyjHXU8e94biVHmO7d8juJhJ7aexzrxlF7vWfeTg8hAaE5Xnf9q7lSq0nOFMsuli1CLbUEjSyz75kooOd485E_qgYk71few-1EQaiYAt95L5CcZvaO8zsAEnvKT-KwFiAWLsty0UIAHgbSfsQGoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WLbxgJ-vuZcDYAGxCYgFAsVmDnV5gAoBmAsByAsBogwDkAEBqg0CSU7IDQHqDRMIn8aCn6-5lwMVTUk4BR29dTNC8A0CiA4J2BMNiBQB0BUBmBYByhYCCgD4FgGAFwGyFwQYAVAGuhcCOAGyGAkSAqRmGAEiAQDQGAHoGAHCGQIIAQ&ae=1&gclid=EAIaIQobChMI2cGCn6-5lwMVTUk4BR29dTNCEAEYASAAEgLebPD_BwE&num=1&cid=CAQSjAIAQM4h3HwHR41-sxOJAnOFzo0WqEyoZHHwJf091LHU7PVL81sKIKkKHSK0OQsGbeul4bfKH0JAtfJ4JxBS4X15Y1r5lj0J4hX_vG0GzeMK4GZKDMUkYJ7ntenl57BePbYIoLYInNyTaiAHoib9iZMhLk9lCwAqiaHhJ8C6fwZL2IFAziE-SYMLuh9vLcr6o5HHvwMxm2HhzruTmF7amZbFqQZ5IVGhv0HeFBo-txs8FQMHRD5_Se12xjS7Yg8DzcotCz4JYmTaZpmlPrJO47Sld7GH9u4rkVjnTLdidlbhclZi2MUOIJBBToZM932n-H2EQnjee0FNEfqHR90M6tOesHhS76apiDQzTRrrGAE&sig=AOD64_144uzkyuY32ktWJRn1_dsogbsAIA&rf=1&nb=1&adurl=https://go.crowdstrike.com/white-papers-complete-guide-to-next-gen-identity-security.html%3Futm_source%3Dgoog%26utm_medium%3Ddis%26utm_campaign%3Didp%26utm_term%3Dpsp_ci_itdm%26utm_language%3Den-au%26utm_content%3Dcrwd-core-apj-ind-en-psp-itdm-egid-cgid-rda_v1_c1_x-uids-2025%26cq_plac%3Dletcode.in%26gad_source%3D5%26gad_campaignid%3D21585402123%26gclid%3DEAIaIQobChMI2cGCn6-5lwMVTUk4BR29dTNCEAEYASAAEgLebPD_BwE
+                        - generic "CrowdStrike®" [ref=f9e17]:
+                          - link "Get the Complete Guide" [ref=f9e18] [cursor=pointer]:
+                            - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CEFWRtGLPatmXJs2S4dkPvevNkQSOlrSQigHWz-fS7xTUy4_TgUYQASDTkZYiYOWS6IPYDqABhLur_ALIAQGoAwHIA8sEqgTqAU_QqSAB0_6m0aLohA_z8eazPd7s4CwKLfYYeC8y_QI9fRbCOnXCxYyLx0rONjBeEv6-cZswfRKVklHy2S6IBi-uW5DM7kvlOlxcGDyK_S-mYysPej7WKHHUwNw2RKmNGlMiUmrWFw7jvteZ3DpgJvxyYr7IKjOqNFbFcDc9AHHtNb7D4ScVsJr9YW77KwNJoU_jSZyjHXU8e94biVHmO7d8juJhJ7aexzrxlF7vWfeTg8hAaE5Xnf9q7lSq0nOFMsuli1CLbUEjSyz75kooOd485E_qgYk71few-1EQaiYAt95L5CcZvaO8zsAEnvKT-KwFiAWLsty0UIAHgbSfsQGoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WLbxgJ-vuZcDYAGxCYgFAsVmDnV5gAoBmAsByAsBogwDkAEBqg0CSU7IDQHqDRMIn8aCn6-5lwMVTUk4BR29dTNC8A0CiA4J2BMNiBQB0BUBmBYByhYCCgD4FgGAFwGyFwQYAVAGuhcCOAGyGAkSAqRmGAEiAQDQGAHoGAHCGQIIAQ&ae=1&gclid=EAIaIQobChMI2cGCn6-5lwMVTUk4BR29dTNCEAEYASAAEgLebPD_BwE&num=1&cid=CAQSjAIAQM4h3HwHR41-sxOJAnOFzo0WqEyoZHHwJf091LHU7PVL81sKIKkKHSK0OQsGbeul4bfKH0JAtfJ4JxBS4X15Y1r5lj0J4hX_vG0GzeMK4GZKDMUkYJ7ntenl57BePbYIoLYInNyTaiAHoib9iZMhLk9lCwAqiaHhJ8C6fwZL2IFAziE-SYMLuh9vLcr6o5HHvwMxm2HhzruTmF7amZbFqQZ5IVGhv0HeFBo-txs8FQMHRD5_Se12xjS7Yg8DzcotCz4JYmTaZpmlPrJO47Sld7GH9u4rkVjnTLdidlbhclZi2MUOIJBBToZM932n-H2EQnjee0FNEfqHR90M6tOesHhS76apiDQzTRrrGAE&sig=AOD64_144uzkyuY32ktWJRn1_dsogbsAIA&rf=1&nb=0&adurl=https://go.crowdstrike.com/white-papers-complete-guide-to-next-gen-identity-security.html%3Futm_source%3Dgoog%26utm_medium%3Ddis%26utm_campaign%3Didp%26utm_term%3Dpsp_ci_itdm%26utm_language%3Den-au%26utm_content%3Dcrwd-core-apj-ind-en-psp-itdm-egid-cgid-rda_v1_c1_x-uids-2025%26cq_plac%3Dletcode.in%26gad_source%3D5%26gad_campaignid%3D21585402123%26gclid%3DEAIaIQobChMI2cGCn6-5lwMVTUk4BR29dTNCEAEYASAAEgLebPD_BwE
+                            - text: Get the CompleteGuide
+                        - generic [ref=f9e20]:
+                          - link "Download" [ref=f9e22] [cursor=pointer]:
+                            - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CEFWRtGLPatmXJs2S4dkPvevNkQSOlrSQigHWz-fS7xTUy4_TgUYQASDTkZYiYOWS6IPYDqABhLur_ALIAQGoAwHIA8sEqgTqAU_QqSAB0_6m0aLohA_z8eazPd7s4CwKLfYYeC8y_QI9fRbCOnXCxYyLx0rONjBeEv6-cZswfRKVklHy2S6IBi-uW5DM7kvlOlxcGDyK_S-mYysPej7WKHHUwNw2RKmNGlMiUmrWFw7jvteZ3DpgJvxyYr7IKjOqNFbFcDc9AHHtNb7D4ScVsJr9YW77KwNJoU_jSZyjHXU8e94biVHmO7d8juJhJ7aexzrxlF7vWfeTg8hAaE5Xnf9q7lSq0nOFMsuli1CLbUEjSyz75kooOd485E_qgYk71few-1EQaiYAt95L5CcZvaO8zsAEnvKT-KwFiAWLsty0UIAHgbSfsQGoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WLbxgJ-vuZcDYAGxCYgFAsVmDnV5gAoBmAsByAsBogwDkAEBqg0CSU7IDQHqDRMIn8aCn6-5lwMVTUk4BR29dTNC8A0CiA4J2BMNiBQB0BUBmBYByhYCCgD4FgGAFwGyFwQYAVAGuhcCOAGyGAkSAqRmGAEiAQDQGAHoGAHCGQIIAQ&ae=1&gclid=EAIaIQobChMI2cGCn6-5lwMVTUk4BR29dTNCEAEYASAAEgLebPD_BwE&num=1&cid=CAQSjAIAQM4h3HwHR41-sxOJAnOFzo0WqEyoZHHwJf091LHU7PVL81sKIKkKHSK0OQsGbeul4bfKH0JAtfJ4JxBS4X15Y1r5lj0J4hX_vG0GzeMK4GZKDMUkYJ7ntenl57BePbYIoLYInNyTaiAHoib9iZMhLk9lCwAqiaHhJ8C6fwZL2IFAziE-SYMLuh9vLcr6o5HHvwMxm2HhzruTmF7amZbFqQZ5IVGhv0HeFBo-txs8FQMHRD5_Se12xjS7Yg8DzcotCz4JYmTaZpmlPrJO47Sld7GH9u4rkVjnTLdidlbhclZi2MUOIJBBToZM932n-H2EQnjee0FNEfqHR90M6tOesHhS76apiDQzTRrrGAE&sig=AOD64_144uzkyuY32ktWJRn1_dsogbsAIA&rf=1&nb=8&adurl=https://go.crowdstrike.com/white-papers-complete-guide-to-next-gen-identity-security.html%3Futm_source%3Dgoog%26utm_medium%3Ddis%26utm_campaign%3Didp%26utm_term%3Dpsp_ci_itdm%26utm_language%3Den-au%26utm_content%3Dcrwd-core-apj-ind-en-psp-itdm-egid-cgid-rda_v1_c1_x-uids-2025%26cq_plac%3Dletcode.in%26gad_source%3D5%26gad_campaignid%3D21585402123%26gclid%3DEAIaIQobChMI2cGCn6-5lwMVTUk4BR29dTNCEAEYASAAEgLebPD_BwE
+                          - link [ref=f9e23] [cursor=pointer]:
+                            - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CEFWRtGLPatmXJs2S4dkPvevNkQSOlrSQigHWz-fS7xTUy4_TgUYQASDTkZYiYOWS6IPYDqABhLur_ALIAQGoAwHIA8sEqgTqAU_QqSAB0_6m0aLohA_z8eazPd7s4CwKLfYYeC8y_QI9fRbCOnXCxYyLx0rONjBeEv6-cZswfRKVklHy2S6IBi-uW5DM7kvlOlxcGDyK_S-mYysPej7WKHHUwNw2RKmNGlMiUmrWFw7jvteZ3DpgJvxyYr7IKjOqNFbFcDc9AHHtNb7D4ScVsJr9YW77KwNJoU_jSZyjHXU8e94biVHmO7d8juJhJ7aexzrxlF7vWfeTg8hAaE5Xnf9q7lSq0nOFMsuli1CLbUEjSyz75kooOd485E_qgYk71few-1EQaiYAt95L5CcZvaO8zsAEnvKT-KwFiAWLsty0UIAHgbSfsQGoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WLbxgJ-vuZcDYAGxCYgFAsVmDnV5gAoBmAsByAsBogwDkAEBqg0CSU7IDQHqDRMIn8aCn6-5lwMVTUk4BR29dTNC8A0CiA4J2BMNiBQB0BUBmBYByhYCCgD4FgGAFwGyFwQYAVAGuhcCOAGyGAkSAqRmGAEiAQDQGAHoGAHCGQIIAQ&ae=1&gclid=EAIaIQobChMI2cGCn6-5lwMVTUk4BR29dTNCEAEYASAAEgLebPD_BwE&num=1&cid=CAQSjAIAQM4h3HwHR41-sxOJAnOFzo0WqEyoZHHwJf091LHU7PVL81sKIKkKHSK0OQsGbeul4bfKH0JAtfJ4JxBS4X15Y1r5lj0J4hX_vG0GzeMK4GZKDMUkYJ7ntenl57BePbYIoLYInNyTaiAHoib9iZMhLk9lCwAqiaHhJ8C6fwZL2IFAziE-SYMLuh9vLcr6o5HHvwMxm2HhzruTmF7amZbFqQZ5IVGhv0HeFBo-txs8FQMHRD5_Se12xjS7Yg8DzcotCz4JYmTaZpmlPrJO47Sld7GH9u4rkVjnTLdidlbhclZi2MUOIJBBToZM932n-H2EQnjee0FNEfqHR90M6tOesHhS76apiDQzTRrrGAE&sig=AOD64_144uzkyuY32ktWJRn1_dsogbsAIA&rf=1&nb=8&adurl=https://go.crowdstrike.com/white-papers-complete-guide-to-next-gen-identity-security.html%3Futm_source%3Dgoog%26utm_medium%3Ddis%26utm_campaign%3Didp%26utm_term%3Dpsp_ci_itdm%26utm_language%3Den-au%26utm_content%3Dcrwd-core-apj-ind-en-psp-itdm-egid-cgid-rda_v1_c1_x-uids-2025%26cq_plac%3Dletcode.in%26gad_source%3D5%26gad_campaignid%3D21585402123%26gclid%3DEAIaIQobChMI2cGCn6-5lwMVTUk4BR29dTNCEAEYASAAEgLebPD_BwE
+                          - link [ref=f9e26] [cursor=pointer]:
+                            - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CEFWRtGLPatmXJs2S4dkPvevNkQSOlrSQigHWz-fS7xTUy4_TgUYQASDTkZYiYOWS6IPYDqABhLur_ALIAQGoAwHIA8sEqgTqAU_QqSAB0_6m0aLohA_z8eazPd7s4CwKLfYYeC8y_QI9fRbCOnXCxYyLx0rONjBeEv6-cZswfRKVklHy2S6IBi-uW5DM7kvlOlxcGDyK_S-mYysPej7WKHHUwNw2RKmNGlMiUmrWFw7jvteZ3DpgJvxyYr7IKjOqNFbFcDc9AHHtNb7D4ScVsJr9YW77KwNJoU_jSZyjHXU8e94biVHmO7d8juJhJ7aexzrxlF7vWfeTg8hAaE5Xnf9q7lSq0nOFMsuli1CLbUEjSyz75kooOd485E_qgYk71few-1EQaiYAt95L5CcZvaO8zsAEnvKT-KwFiAWLsty0UIAHgbSfsQGoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WLbxgJ-vuZcDYAGxCYgFAsVmDnV5gAoBmAsByAsBogwDkAEBqg0CSU7IDQHqDRMIn8aCn6-5lwMVTUk4BR29dTNC8A0CiA4J2BMNiBQB0BUBmBYByhYCCgD4FgGAFwGyFwQYAVAGuhcCOAGyGAkSAqRmGAEiAQDQGAHoGAHCGQIIAQ&ae=1&gclid=EAIaIQobChMI2cGCn6-5lwMVTUk4BR29dTNCEAEYASAAEgLebPD_BwE&num=1&cid=CAQSjAIAQM4h3HwHR41-sxOJAnOFzo0WqEyoZHHwJf091LHU7PVL81sKIKkKHSK0OQsGbeul4bfKH0JAtfJ4JxBS4X15Y1r5lj0J4hX_vG0GzeMK4GZKDMUkYJ7ntenl57BePbYIoLYInNyTaiAHoib9iZMhLk9lCwAqiaHhJ8C6fwZL2IFAziE-SYMLuh9vLcr6o5HHvwMxm2HhzruTmF7amZbFqQZ5IVGhv0HeFBo-txs8FQMHRD5_Se12xjS7Yg8DzcotCz4JYmTaZpmlPrJO47Sld7GH9u4rkVjnTLdidlbhclZi2MUOIJBBToZM932n-H2EQnjee0FNEfqHR90M6tOesHhS76apiDQzTRrrGAE&sig=AOD64_144uzkyuY32ktWJRn1_dsogbsAIA&rf=1&nb=8&adurl=https://go.crowdstrike.com/white-papers-complete-guide-to-next-gen-identity-security.html%3Futm_source%3Dgoog%26utm_medium%3Ddis%26utm_campaign%3Didp%26utm_term%3Dpsp_ci_itdm%26utm_language%3Den-au%26utm_content%3Dcrwd-core-apj-ind-en-psp-itdm-egid-cgid-rda_v1_c1_x-uids-2025%26cq_plac%3Dletcode.in%26gad_source%3D5%26gad_campaignid%3D21585402123%26gclid%3DEAIaIQobChMI2cGCn6-5lwMVTUk4BR29dTNCEAEYASAAEgLebPD_BwE
+                      - generic [ref=f9e27] [cursor=pointer]
+                      - button [ref=f9e32] [cursor=pointer]
+                      - iframe
+          - generic [ref=e53]:
+            - heading "Learning Points" [level=3] [ref=e58]
+            - list [ref=e59]:
+              - listitem [ref=e60]:
+                - generic [ref=e64]: Target Locator
+              - listitem [ref=e65]:
+                - generic [ref=e69]:
+                  - text: switchTo()
+                  - link "Enroll in Classes" [ref=e70] [cursor=pointer]
+              - listitem [ref=e74]:
+                - generic [ref=e78]: defaultContent()
+              - listitem [ref=e79]:
+                - generic [ref=e83]: parentFrame()
+              - listitem [ref=e84]:
+                - generic [ref=e88]:
+                  - text: Overloading concept -
+                  - link "JAVA" [ref=e89] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=e92]:
+              - link "Watch Tutorial" [ref=e93] [cursor=pointer]:
+                - /url: /video/frame
+              - generic [ref=e97]:
+                - text: "Practice ID:"
+                - code [ref=e98]: frame
+          - insertion [ref=e102]:
+            - generic [ref=e105]:
+              - heading "These are topics related to the article that might interest you" [level=2] [ref=e107]: Discover more
+              - link "LetCode tutorials" [ref=e108] [cursor=pointer]
+              - link "Playwright runner" [ref=e113] [cursor=pointer]
+              - link "Ortoni ReportLetXPath" [ref=e118] [cursor=pointer]
+              - link "Programming workspace" [ref=e123] [cursor=pointer]
+              - link "Frame practice tool" [ref=e128] [cursor=pointer]
+              - link "Target Locator guide" [ref=e133] [cursor=pointer]
+              - link "switchTo() guide" [ref=e138] [cursor=pointer]
+              - link "defaultContent() guide" [ref=e143] [cursor=pointer]
+        - generic [ref=e150]:
+          - insertion:
+            - iframe [ref=e152]
+    - contentinfo [ref=e153]:
+      - generic [ref=e154]:
+        - paragraph [ref=e155]:
+          - text: © 2026 LetCode ·
+          - link "Koushik Chatterjee" [ref=e156] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/ortoni/
+          - text: "&"
+          - link "Bollineni Yaswanth" [ref=e157] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/bollineni-lakshmi-yaswanth-14472a199
+        - generic [ref=e158]:
+          - link "GitHub" [ref=e159] [cursor=pointer]:
+            - /url: https://github.com/ortoniKC
+          - link "YouTube" [ref=e163] [cursor=pointer]:
+            - /url: https://www.youtube.com/@letcode
+          - link "LinkedIn" [ref=e167] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/ortoni/
+          - link "Contact" [ref=e173] [cursor=pointer]:
+            - /url: /contact
+          - link "🍕 Support" [ref=e174] [cursor=pointer]:
+            - /url: https://buymeacoffee.com/letcode
+  - generic:
+    - insertion:
+      - iframe [ref=e176]
+  - dialog "Unlock more content" [ref=e179]:
+    - generic [ref=e180]:
+      - img "Welcome to letcode.in" [ref=e183]
+      - generic [ref=e184]:
+        - heading "Unlock more content" [level=1] [ref=e185]
+        - paragraph [ref=e187]: Take action to continue accessing the content on this site
+      - button "View a short ad Site-wide access for 24 hours" [ref=e189] [cursor=pointer]:
+        - generic [ref=e190]:
+          - generic [ref=e191]: View a short ad
+          - generic [ref=e192]: Site-wide access for 24 hours
+```

@@ -1,0 +1,16 @@
+allure Report:
+
+npm init playwright@latest = checks/updates playwright to the latest version
+|
+npx playwright test- runs tests files
+|
+npm i -D @playwright/test allure-playwright = install allure tool
+|
+playwright.config.js-->reporter: 'html' [['allure-playwright',{outputFolder:'allure-results'}]],
+|
+npm install -g allure-commandline = tool to build/store the allure report
+|
+allure generate ./allure-results -o allure-report --clean = clean folder/cleansup any old files
+|
+allure open allure-report = open then allure report in browser
+

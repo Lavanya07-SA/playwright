@@ -1,0 +1,4 @@
+Browser Launched Using beforeAll
+starting page test
+Hotel Searched
+page Test Completed

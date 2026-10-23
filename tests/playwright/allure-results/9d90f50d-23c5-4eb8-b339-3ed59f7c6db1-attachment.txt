@@ -1,0 +1,13 @@
+      Module 1-loginpage.js       
+AdactinHotel-login page done
+     Module 2-searchpage.js       
+AdactinHotel-search page done
+        Module 3-select.js      
+AdactinHotel-select page done
+        Module 4-bookhotel.js      
+AdactinHotel-BookNow Page done
+       Module 5-bookingconfirm.js      
+Order No:  WKE8NOS538
+AdactinHotel-Booking Confirm Page done
+       Module 6-myitinerary.js      
+AdactinHotel- MyItinerary Page done

@@ -1,0 +1,4 @@
+AdactinHotel-login page
+AdactinHotel-search page
+AdactinHotel-select page
+AdactinHotel-BookNow Page

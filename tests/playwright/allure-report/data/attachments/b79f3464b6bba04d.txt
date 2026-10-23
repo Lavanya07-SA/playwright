@@ -1,0 +1,51 @@
+all data: [
+  ' Chocolate',     '150',                'Apple',
+  '180',            'Eggs',               '48',
+  'Corn',           '480',                'Koushik',
+  'Chatterjee',     'koushik@letcode.in', '',
+  'Yashwanth',      'Raj',                'yashwanth@letcode.in',
+  '',               'Iron',               'Man',
+  'man@letcode.in', '',                   ' Frozen yogurt',
+  '159',            '6',                  '24',
+  '4',              '70',                 ' Ice cream',
+  '237',            '9',                  '37',
+  '4',              '40',                 'Eclair',
+  '262',            '16',                 '24',
+  '6',              '80',                 'Cupcake',
+  '305',            '4',                  '67',
+  '4',              '50',                 'Gingerbread',
+  '356',            '16',                 '49',
+  '4',              '60'
+]
+row data: [
+  'Eggs',           '48',
+  'Iron',           'Man',
+  'man@letcode.in', '',
+  'Eclair',         '262',
+  '16',             '24',
+  '6',              '80'
+]
+column data: [
+  ' Chocolate', 'Apple',
+  'Eggs',       'Corn',
+  'Koushik',    'Yashwanth',
+  'Iron',       ' Frozen yogurt',
+  ' Ice cream', 'Eclair',
+  'Cupcake',    'Gingerbread'
+]
+particular data: [ 'Eggs', 'Iron', 'Eclair' ]
+header: [
+  'Items',
+  'Price',
+  'First name',
+  'Last name',
+  'Email address',
+  'Present/Absent',
+  'Dessert (100g) ',
+  'Calories ',
+  'Fat (g) ',
+  'Carbs (g) ',
+  'Protein (g) ',
+  'Cholesterol(mg) '
+]
+select hotel table: []

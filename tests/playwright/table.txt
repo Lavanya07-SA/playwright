@@ -1,0 +1,41 @@
+all data- //table/tbody/tr/td
+
+row data- //table/tbody/tr[3]/td
+
+column data- //table/tbody/tr/td[1]
+
+particular data- //table/tbody/tr[3]/td[1]
+
+header- //table/thead/tr/th
+
+
+<html>
+  <head>
+    <table>
+      <thead>
+        <tr>
+        <th>items</th>
+        <th>price</th>
+        </
+      </thead>
+      <tbody>
+        <tr>
+          <td>chocolate</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>apple</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>eggs</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>corn</td>
+          <td>480</td>
+        </tr>
+      </tbody>
+    </table>
+  </head>
+</html>

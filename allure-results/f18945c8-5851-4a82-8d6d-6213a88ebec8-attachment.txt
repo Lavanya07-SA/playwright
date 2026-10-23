@@ -1,0 +1,3 @@
+starting page test
+Hotel Selected
+page Test Completed
